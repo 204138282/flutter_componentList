@@ -17,7 +17,7 @@ class MyGoAndroid extends StatelessWidget {
     }
     return str;
   }
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(appBar: AppBar(title: Text('$title')), 

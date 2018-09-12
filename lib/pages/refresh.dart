@@ -70,7 +70,7 @@ class MyRefreshState extends State<MyRefresh> {
                   ),
                   Divider(height: 2.0, color: Colors.grey)
                 ]
-            );
+              );
             }
           },
           padding: const EdgeInsets.all(10.0),
