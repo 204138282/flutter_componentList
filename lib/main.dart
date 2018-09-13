@@ -3,7 +3,7 @@ import './pages/home.dart';
 import './pages/login.dart';
 
 void main() => runApp(new MaterialApp(
-      theme: ThemeData(primarySwatch: Colors.blue),
+      // theme: ThemeData(primarySwatch: Colors.blue),
       // home: new MyApp(),
       home: new MyLogin('Login'),
     ));
