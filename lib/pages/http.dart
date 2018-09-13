@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import '../model/User.dart';
-import 'package:flutter/services.dart';
 
 class MyHttp extends StatefulWidget {
   final String title;
