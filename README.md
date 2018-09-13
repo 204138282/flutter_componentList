@@ -5,9 +5,9 @@ flutter相关API及Widget组件实现---
 Flutter常用组件/功能展示
 
 
-![img-001](https://github.com/204138282/xiaoLoo_pictures/blob/master/flutter_refresh@3x.png)
+![img-001](https://github.com/204138282/xiaoLoo_pictures/blob/master/flutter_refresh.png)
 
-![img-001](https://github.com/204138282/xiaoLoo_pictures/blob/master/flutter_loadmore@3x.png)
+![img-001](https://github.com/204138282/xiaoLoo_pictures/blob/master/flutter_loadmore.png)
 
 ##  Flutter:    
 -   下拉刷新    (Widget)    RefreshIndicator
