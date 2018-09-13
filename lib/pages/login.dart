@@ -40,10 +40,10 @@ class MyLoginState extends State<MyLogin> with TickerProviderStateMixin{
     if (isLogin) {
       AnimationController animationController = new AnimationController(vsync: this, duration: Duration(milliseconds: 2000));
       Animation<Color> animation = new Tween(begin: Colors.white, end: Colors.black).animate(animationController);
-      loginButtonWidget = CircularProgressIndicator(backgroundColor: Colors.white, valueColor: animation);
+      loginButtonWidget = CircularProgressIndicator(backgroundColor:  Color(0xff2f3443), valueColor: animation);
 
     } else {
-      loginButtonWidget = Text('登录', style: TextStyle(color: Colors.white));
+      loginButtonWidget = Text('登 录', style: TextStyle(color: Colors.green, fontSize: 18.0));
     }
 
     final logo = Hero(
@@ -51,7 +51,8 @@ class MyLoginState extends State<MyLogin> with TickerProviderStateMixin{
       child: new CircleAvatar(
         backgroundColor: Colors.transparent,
         radius: 30.0,
-        child: Image.network('https://avatars2.githubusercontent.com/u/19224458?v=4', width: 60.0, height: 60.0),
+        // child: Image.asset('../images/icon.png'),
+        backgroundImage: new NetworkImage('https://avatars2.githubusercontent.com/u/19224458?v=4'),
       ),
     );
     final userName = TextFormField(
@@ -75,13 +76,13 @@ class MyLoginState extends State<MyLogin> with TickerProviderStateMixin{
     final loginButton = Padding(
       padding: const EdgeInsets.symmetric(),
       child: Material(
+        color: Color(0xff2f3443),
         borderRadius: BorderRadius.circular(30.0),
         shadowColor: Color(0xff2f3443),
         elevation: 5.0,
         child: MaterialButton(
           minWidth: 200.0,
           height: 42.0,
-          color: Color(0xff2f3443),
           onPressed: onLoginClick,
           child: loginButtonWidget,
         ),
@@ -95,7 +96,6 @@ class MyLoginState extends State<MyLogin> with TickerProviderStateMixin{
 
     
     return new Scaffold(
-      // appBar: AppBar(title: Text(widget.title)),
       backgroundColor: Colors.white,
       body: new Container(
         decoration: new BoxDecoration(

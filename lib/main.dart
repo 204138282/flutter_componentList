@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
 import './pages/home.dart';
 import './pages/login.dart';
 
-void main() => runApp(new MaterialApp(
-      // theme: ThemeData(primarySwatch: Colors.blue),
-      // home: new MyApp(),
-      home: new MyLogin('Login'),
-    ));
+void main() {
+  debugPaintSizeEnabled = true;
+  runApp(new MaterialApp(
+    theme: ThemeData(primarySwatch: Colors.blue),
+    home: new MyLogin('Login'),
+  ));
+} 
 
 class MyApp extends StatefulWidget {
   @override
