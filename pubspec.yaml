@@ -10,7 +10,7 @@ dependencies:
   # 文件存储
   path_provider: ^0.4.0
   # sqlite存储
-  sqflite: ^0.8.5
+  sqflite: ^0.9.1
   #网络请求
   http: ^0.11.3+16
 
