@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_routes_i/pages/login.dart';
-import 'package:flutter_routes_i/pages/future.dart';
+import '../pages/login.dart';
+import '../pages/future.dart';
 import '../pages/preference.dart';
 import '../pages/pathProvider.dart';
 import '../pages/sqlite.dart';

@@ -5,13 +5,13 @@ dependencies:
   flutter:
     sdk: flutter
 
-  # 本地存储
-  shared_preferences: ^0.4.1
+  #本地存储
+  shared_preferences: ^0.4.2
   # 文件存储
-  path_provider: ^0.4.0
+  path_provider: ^0.4.1
   # sqlite存储
-  sqflite: ^0.9.1
-  #网络请求
+  sqflite: ^0.11.0
+  # 网络请求
   http: ^0.11.3+16
 
 
