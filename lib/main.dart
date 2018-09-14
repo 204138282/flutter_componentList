@@ -4,7 +4,7 @@ import './pages/home.dart';
 import './pages/login.dart';
 
 void main() {
-  debugPaintSizeEnabled = true;
+  debugPaintSizeEnabled = false;
   runApp(new MaterialApp(
     theme: ThemeData(primarySwatch: Colors.blue),
     home: new MyLogin('Login'),

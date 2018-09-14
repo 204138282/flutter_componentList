@@ -12,6 +12,8 @@ import '../pages/refresh.dart';
 import '../pages/animation.dart';
 import '../pages/curvedAnimation.dart';
 import '../pages/animationWidget.dart';
+import '../pages/sliverBar.dart';
+import '../pages/gradient.dart';
 
 class MyHome extends StatefulWidget {
   final String title;
@@ -37,7 +39,9 @@ class MyHomeState extends State<MyHome> {
     Item(Icons.refresh, 'RefreshIndicator'),
     Item(Icons.wifi_tethering, 'Animation'),
     Item(Icons.wb_sunny, 'MyCurvedAnimation'),
-    Item(Icons.wb_cloudy, 'AnimationWidget')
+    Item(Icons.wb_cloudy, 'AnimationWidget'),
+    Item(Icons.apps, 'SliverAppBar'),
+    Item(Icons.gradient, 'Gradient')
   ];
   
   @override
@@ -81,6 +85,10 @@ class MyHomeState extends State<MyHome> {
                         temp = new MyCurvedAnimation(list[index].title);
                       } else if (index == 12) {
                         temp = new LogoFade(list[index].title);
+                      } else if (index == 13) {
+                        temp = new MySliverBar(list[index].title);
+                      } else if (index == 14) {
+                        temp = new MyGradient(title: list[index].title);  //这种方式,可以传[map\集合\数组......]等其他数据
                       }
                       return temp;
                     }));

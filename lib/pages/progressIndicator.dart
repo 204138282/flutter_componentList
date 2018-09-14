@@ -41,7 +41,7 @@ class MyProgressIndicatorState extends State<MyProgressIndicator> {
             new Text('LinearProgressIndicato: ', style: TextStyle(fontSize: 20.0)),
             new LinearProgressIndicator(
               backgroundColor: Colors.grey,
-              value: currentProgress
+              value: currentProgress //是否自动执行动画
             ),
             new FloatingActionButton(
               child: Text('[+]'),
@@ -55,7 +55,7 @@ class MyProgressIndicatorState extends State<MyProgressIndicator> {
             new CircularProgressIndicator(
               strokeWidth: 10.0,
               backgroundColor: Colors.green,
-              value: currentCirProgress,
+              value: currentCirProgress, //是否自动执行动画
             ),
             new RaisedButton(
                 shape: new CircleBorder(
